@@ -1,9 +1,21 @@
-.FirstApp {
-  text-align: center;
+.display-value {
+  width: 300px;
+  height: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid gray;
+  border-radius: 2px;
 }
 
-h1 {
-  color: aqua;
-  font-size: 20px;
-  font-weight: 700;
+.board {
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+button {
+  width: 25%;
+  height: 50px;
+  border-radius: 0;
+  border: 1px solid gray;
 }
