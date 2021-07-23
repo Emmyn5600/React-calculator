@@ -2,8 +2,8 @@ import React from 'react';
 import Button from './Button';
 
 const ButtonPanel = () => (
-    <div className="board">
-     <div>
+  <div className="board">
+    <div>
       <Button name="AC" />
       <Button name="+/-" />
       <Button name="%" />
