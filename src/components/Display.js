@@ -1,14 +1,30 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Display = ({ value }) => <div className="display-value">{value}</div>;
+class Display extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {};
+  }
 
+  render() {
+    const { calculation } = this.props;
+    return (
+      <div className="display-result">
+
+        <input id="result" defaultValue={calculation} />
+
+      </div>
+
+    );
+  }
+}
 Display.defaultProps = {
-  value: '0',
+  calculation: '0',
 };
-
 Display.propTypes = {
-  value: PropTypes.string,
+  calculation: PropTypes.string,
+
 };
 
 export default Display;

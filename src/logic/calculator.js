@@ -1,16 +1,18 @@
 import operate from './operate';
 
-const calculate = (data, buttonName) => {
-  let { total, next, operation } = data;
-  if (buttonName === '=') {
-    total = operate(total, next, operation);
-  }
+const calculate = (buttonName, dataObj) => {
+  let { total, next, operation } = dataObj;
   if (buttonName === '+/-') {
     total *= -1;
     next *= -1;
   }
   if (buttonName === 'AC') {
     total = null;
+    next = null;
+    operation = null;
+  }
+  if (buttonName === '=') {
+    total = operate(total, next, operation);
     next = null;
     operation = null;
   }
@@ -28,7 +30,7 @@ const calculate = (data, buttonName) => {
       next = '0.';
     }
   }
-  if ([0, 1, 2, 3, 4, 5, 6, 7, 8, 9].includes(buttonName)) {
+  if ([...Array(10)].map((_, i) => `${i}`).includes(buttonName)) {
     if (operation === null) {
       if (total === null) {
         total = buttonName;
@@ -37,11 +39,17 @@ const calculate = (data, buttonName) => {
       } else {
         total += buttonName;
       }
+    } else if (next === null) {
+      next = buttonName;
     } else {
       next += buttonName;
     }
   }
-  if (['+', '-', '*', '+'].includes(buttonName)) {
+  if (buttonName === '%') {
+    total *= 0.01;
+    next *= 0.01;
+  }
+  if (['+', '-', 'X', '÷'].includes(buttonName)) {
     if (!total) {
       total = '0';
     }
@@ -54,10 +62,7 @@ const calculate = (data, buttonName) => {
       operation = buttonName;
     }
   }
-  if (buttonName === '%') {
-    total *= 0.01;
-    next *= 0.01;
-  }
+
   return { total, next, operation };
 };
 
