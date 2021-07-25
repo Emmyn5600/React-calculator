@@ -19,3 +19,8 @@ button {
   border-radius: 0;
   border: 1px solid gray;
 }
+
+#result {
+  margin-left: 520px;
+  width: 22.5%;
+}
