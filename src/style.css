@@ -1,0 +1,134 @@
+.display-value {
+  width: 300px;
+  height: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid gray;
+  border-radius: 2px;
+}
+
+.board {
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+button {
+  width: 25%;
+  height: 50px;
+  border-radius: 0;
+  border: 1px solid gray;
+}
+
+.display-result {
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#result {
+  width: 700px;
+  height: 100px;
+  border: none;
+  background-color: #858693;
+  box-sizing: border-box;
+  font-size: 40px;
+  font-weight: bold;
+  color: #fff;
+}
+
+::placeholder {
+  color: #fff;
+  opacity: 1;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.board {
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+button {
+  width: 25%;
+  height: 100px;
+  border-radius: 0;
+  border: 1px solid gray;
+  font-size: 30px;
+}
+
+.zeros {
+  width: 50%;
+}
+
+.ornge {
+  background-color: #f4913e;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.link {
+  margin-top: 26px;
+  margin-right: 7%;
+}
+
+.title {
+  margin-left: 5%;
+}
+
+a {
+  margin-left: 15px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+a::after {
+  content: '|';
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+h2 {
+  width: 90%;
+  margin: 0 5%;
+}
+
+p {
+  width: 90%;
+  margin: 2% 5%;
+  font-size: 20px;
+}
+
+.qoute {
+  width: 80%;
+  margin: 15% 10%;
+  font-size: 25px;
+}
+
+.app {
+  display: flex;
+  justify-content: space-between;
+}
+
+.calc {
+  margin-right: 5%;
+}
+
+.lets {
+  margin-left: 5%;
+}
+
+.lets h1 {
+  font-size: 20px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+@media screen and (max-width: 1000px) {
+  .lets {
+    display: none;
+  }
+}
