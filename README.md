@@ -4,6 +4,10 @@
 
 > This is a calculator that solves advanced problems in Physics, Mathematics.
 
+# How it looks
+
+![Screenshot](./assets/calc.png)
+
 # Getting Started
 
 **To get the local copy of the project up and running you will need to run the following commands on your terminal:**

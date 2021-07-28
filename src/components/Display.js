@@ -1,30 +1,13 @@
+/* eslint-disable react/prop-types */
 import React from 'react';
-import PropTypes from 'prop-types';
 
-class Display extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
+const Display = ({ calculation }) => (
+  <div className="display-result">
 
-  render() {
-    const { calculation } = this.props;
-    return (
-      <div className="display-result">
+    <input id="result" defaultValue={calculation} placeholder="0" dir="rtl" />
 
-        <input id="result" defaultValue={calculation} />
+  </div>
 
-      </div>
-
-    );
-  }
-}
-Display.defaultProps = {
-  calculation: '0',
-};
-Display.propTypes = {
-  calculation: PropTypes.string,
-
-};
+);
 
 export default Display;

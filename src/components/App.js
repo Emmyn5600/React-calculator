@@ -22,10 +22,15 @@ const App = () => {
 
   const { total, next } = data;
   return (
-    <>
-      <Display calculation={next || total} />
-      <ButtonPannel clickHandler={(e) => handleClick(e.target.innerText)} />
-    </>
+    <div className="app">
+      <div className="lets">
+        <h1>Lets Do Some Magicians with Math Calc! </h1>
+      </div>
+      <div className="calc">
+        <Display calculation={next || total} />
+        <ButtonPannel clickHandler={(e) => handleClick(e.target.innerText)} />
+      </div>
+    </div>
   );
 };
 
