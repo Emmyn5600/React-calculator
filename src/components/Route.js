@@ -5,13 +5,14 @@ import Navbar from './Navbar';
 import Home from './Home';
 import Quote from './Quote';
 
-const Route = () => (
-<BrowserRouter>
-<Navbar/>
- <Switch>
-     <Route exact path='' component={Home}/>
-     <Route exact path="/quote" component={Quote} />
-     <Route exact path='/calculate' component={App}/>
- </Switch>
-</BrowserRouter>
-)
+const Routes = () => (
+  <BrowserRouter>
+    <Navbar />
+    <Switch>
+      <Route exact path="" component={Home} />
+      <Route exact path="/quote" component={Quote} />
+      <Route exact path="/calculate" component={App} />
+    </Switch>
+  </BrowserRouter>
+);
+export default Routes;
