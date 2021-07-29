@@ -87,3 +87,10 @@ it('should not perform multiplcation', () => {
   expect(result.next).not.toBe(0);
   expect(result.operation).not.toBe('X');;
 });
+
+it('should not perform division', () => {
+  const result = calculate('=', {total:'20', next: '10', operation: '÷'});
+  expect(result.total * 1).not.toBe(0);
+  expect(result.next).not.toBe(0);
+  expect(result.operation).not.toBe('÷');;
+});
