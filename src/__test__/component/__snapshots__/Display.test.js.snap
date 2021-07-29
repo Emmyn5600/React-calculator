@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Display it render the display 1`] = `
+<div
+  className="display-result"
+>
+  <input
+    dir="rtl"
+    id="result"
+    placeholder="0"
+  />
+</div>
+`;
+
+exports[`Display it renders the display 1`] = `
+<div
+  className="display-result"
+>
+  <input
+    dir="rtl"
+    id="result"
+    placeholder="0"
+  />
+</div>
+`;
