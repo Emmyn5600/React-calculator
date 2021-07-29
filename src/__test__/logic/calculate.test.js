@@ -80,3 +80,10 @@ it('should not perform substration', () => {
   expect(result.next).not.toBe(0);
   expect(result.operation).not.toBe('-');;
 });
+
+it('should not perform multiplcation', () => {
+  const result = calculate('=', {total:'20', next: '10', operation: 'X'});
+  expect(result.total * 1).not.toBe(0);
+  expect(result.next).not.toBe(0);
+  expect(result.operation).not.toBe('X');;
+});
