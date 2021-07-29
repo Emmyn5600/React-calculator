@@ -73,3 +73,10 @@ it('should not perform addition', () => {
    expect(result.next).not.toBe(0);
    expect(result.operation).not.toBe('+');;
 });
+
+it('should not perform substration', () => {
+  const result = calculate('=', {total:'20', next: '10', operation: '-'});
+  expect(result.total * 1).not.toBe(0);
+  expect(result.next).not.toBe(0);
+  expect(result.operation).not.toBe('-');;
+});
