@@ -10,4 +10,9 @@ describe('should perform the operation', () => {
      const result = operate('2', '2', '-');
      expect(result * 1).toEqual(0);
   });
+
+ it('should divide two numbers', () => {
+    const result = operate('10', '20', '÷');
+    expect(result * 1).toEqual(0.5);
+  });
 });
