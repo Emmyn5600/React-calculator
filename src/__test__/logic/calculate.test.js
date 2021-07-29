@@ -53,6 +53,13 @@ it('should return multiplication result', () => {
   expect(result.operation).toEqual(null);
 });
 
+it('should return division result', () => {
+  const result = calculate('=', { total: '2', next: '2', operation: '÷' });
+  expect(result.total * 1).toEqual(1);
+  expect(result.next).toEqual(null);
+  expect(result.operation).toEqual(null);
+});
+
 it('Should return a float or add a dot value', () => {
   const result = calculate('.', calc1);
   expect(result).toEqual({ next: null, operation: null, total: '0.' });
