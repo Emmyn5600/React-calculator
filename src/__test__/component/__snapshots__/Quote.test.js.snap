@@ -19,3 +19,13 @@ exports[`Home it should render home navbar 1`] = `
   </p>
 </div>
 `;
+
+exports[`Quote it should render Quote page 1`] = `
+<div>
+  <p
+    className="qoute"
+  >
+    Mathematics is not about numbers, equations, computations, or algorithms: it is about understanding. –William Paul Thurston
+  </p>
+</div>
+`;
