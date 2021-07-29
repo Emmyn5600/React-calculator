@@ -64,3 +64,12 @@ it('Should return a float or add a dot value', () => {
   const result = calculate('.', calc1);
   expect(result).toEqual({ next: null, operation: null, total: '0.' });
 });
+
+/*negative test */
+
+it('should not perform addition', () => {
+   const result = calculate('=', {total:'20', next: '10', operation: '+'});
+   expect(result.total * 1).not.toBe(0);
+   expect(result.next).not.toBe(0);
+   expect(result.operation).not.toBe('+');;
+});
