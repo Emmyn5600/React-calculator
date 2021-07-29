@@ -1,4 +1,6 @@
+import { Result } from 'postcss';
 import { operation } from 'retry';
+import { reset } from 'sinon';
 import calculate from '../../logic/calculator';
 import operate from '../../logic/operate';
 
@@ -38,4 +40,11 @@ describe('calculate a method', () => {
     expect(result.total * 1).toEqual(150);
     expect(result.next).toEqual(null);
     expect(result.operation).toEqual(null);
-   });
+});  
+    
+  it('should return substration result', () => {
+      const result = calculate('=', {total: '3', next: '1', operation: '-'});
+       expect(result.total * 1).toEqual(2);
+        expect(result.next).toEqual(null);
+        expect(result.operation).toEqual(null);
+  })
