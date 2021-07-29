@@ -47,9 +47,13 @@ it('should return substration result', () => {
 
 
 it('should return multiplication result', () => {
-    const result = calculate('=', { total: '3', next: '1', operation: 'X' });
-    expect(result.total * 1).toEqual(3);
-    expect(result.next).toEqual(null);
-    expect(result.operation).toEqual(null);
-  });
-  
+  const result = calculate('=', { total: '3', next: '1', operation: 'X' });
+  expect(result.total * 1).toEqual(3);
+  expect(result.next).toEqual(null);
+  expect(result.operation).toEqual(null);
+});
+
+it('Should return a float or add a dot value', () => {
+  const result = calculate('.', calc1);
+  expect(result).toEqual({ next: null, operation: null, total: '0.' });
+});
