@@ -31,4 +31,11 @@ describe('calculate a method', () => {
     expect(result.total).toBe(null);
     expect(result.next).toBe(null);
     expect(result.operation).toBe(null);
-    })
+});
+
+   it('should return addition result', () => {
+    const result = calculate('=', {total: '100', next: '50', operation: '+'});
+    expect(result.total * 1).toEqual(150);
+    expect(result.next).toEqual(null);
+    expect(result.operation).toEqual(null);
+   });
