@@ -1,4 +1,6 @@
+import { operation } from 'retry';
 import calculate from '../../logic/calculator';
+import operate from '../../logic/operate';
 
 const calc1 = {total: null, next: null, operation: null};
 const calc2 = { total: '5', next: null, operation: null };
@@ -23,3 +25,10 @@ describe('calculate a method', () => {
    const result = calculate('+/-', calc2);
    expect(result.total).toBe(-5); 
 });
+
+    it('should return null value', () => {
+    const result = calculate('AC', {total: '10', next: '3', operation: "+"});
+    expect(result.total).toBe(null);
+    expect(result.next).toBe(null);
+    expect(result.operation).toBe(null);
+    })
