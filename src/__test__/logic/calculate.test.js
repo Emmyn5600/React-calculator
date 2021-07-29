@@ -9,7 +9,12 @@ describe('calculate a method', () => {
    });
 });
 
-describe('should return a total divide by 100', () => {
-   const result = calculate('%', calc2);
-   expect(result.total).toEqual(0.05);
+it('Should return total divide by 100', () => {
+    const result = calculate('%', calc2);
+    expect(result.total).toEqual(0.05);
+});
+
+it('should return an object', () => {
+    const result = calculate(5, calc1);
+    expect(typeof result).toEqual('object');
 });
