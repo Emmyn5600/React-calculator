@@ -4,7 +4,7 @@ import Display from '../../components/Display';
 
 describe('Display', () => {
     it('it render the display', () => {
-     const tree = renderer.create(<Display/>);
+     const tree = renderer.create(<Display/>).toJSON();
      expect(tree).toMatchSnapshot();
     });
 });
