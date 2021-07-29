@@ -4,7 +4,7 @@ import App from '../../components/App';
 
 describe('App render', () => {
   it('should render calculator', () => {
-    const tree = renderer.create(<App/>).toJSON();
-    expect(tree).toMatchSnapshot(); 
-   })
+    const tree = renderer.create(<App />).toJSON();
+    expect(tree).toMatchSnapshot();
+  });
 });

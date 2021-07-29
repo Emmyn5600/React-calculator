@@ -45,7 +45,6 @@ it('should return substration result', () => {
   expect(result.operation).toEqual(null);
 });
 
-
 it('should return multiplication result', () => {
   const result = calculate('=', { total: '3', next: '1', operation: 'X' });
   expect(result.total * 1).toEqual(3);
@@ -65,32 +64,32 @@ it('Should return a float or add a dot value', () => {
   expect(result).toEqual({ next: null, operation: null, total: '0.' });
 });
 
-/*negative test */
+/* negative test */
 
 it('should not perform addition', () => {
-   const result = calculate('=', {total:'20', next: '10', operation: '+'});
-   expect(result.total * 1).not.toBe(0);
-   expect(result.next).not.toBe(0);
-   expect(result.operation).not.toBe('+');;
+  const result = calculate('=', { total: '20', next: '10', operation: '+' });
+  expect(result.total * 1).not.toBe(0);
+  expect(result.next).not.toBe(0);
+  expect(result.operation).not.toBe('+');
 });
 
 it('should not perform substration', () => {
-  const result = calculate('=', {total:'20', next: '10', operation: '-'});
+  const result = calculate('=', { total: '20', next: '10', operation: '-' });
   expect(result.total * 1).not.toBe(0);
   expect(result.next).not.toBe(0);
-  expect(result.operation).not.toBe('-');;
+  expect(result.operation).not.toBe('-');
 });
 
 it('should not perform multiplcation', () => {
-  const result = calculate('=', {total:'20', next: '10', operation: 'X'});
+  const result = calculate('=', { total: '20', next: '10', operation: 'X' });
   expect(result.total * 1).not.toBe(0);
   expect(result.next).not.toBe(0);
-  expect(result.operation).not.toBe('X');;
+  expect(result.operation).not.toBe('X');
 });
 
 it('should not perform division', () => {
-  const result = calculate('=', {total:'20', next: '10', operation: '÷'});
+  const result = calculate('=', { total: '20', next: '10', operation: '÷' });
   expect(result.total * 1).not.toBe(0);
   expect(result.next).not.toBe(0);
-  expect(result.operation).not.toBe('÷');;
+  expect(result.operation).not.toBe('÷');
 });
