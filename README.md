@@ -6,10 +6,10 @@
     <img alt="MIT Licensed" src="https://img.shields.io/github/license/Emmyn5600/Todo-App?style=flat-square">
   </a>
   <a href="https://github.com/Emmyn5600/Todo-App">
-    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/Emmyn5600/Todo-App/development?color=blue&style=flat-square">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/Emmyn5600/React-calculator/development?color=blue&style=flat-square">
   </a>
    <a href="https://github.com/Emmyn5600/Todo-App">
-    <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/Emmyn5600/Todo-App?color=pink&label=%E2%98%85%20stars%20&style=flat-square">
+    <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/Emmyn5600/React-calculator?color=pink&label=%E2%98%85%20stars%20&style=flat-square">
   </a>
   <a href="https://github.com/Emmyn5600/Todo-App">
     <img alt="GitHub followers" src="https://img.shields.io/github/followers/Emmyn5600?color=yellow&logo=github&style=flat-square">
