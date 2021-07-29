@@ -9,12 +9,17 @@ describe('calculate a method', () => {
    });
 });
 
-it('Should return total divide by 100', () => {
+    it('Should return total divide by 100', () => {
     const result = calculate('%', calc2);
     expect(result.total).toEqual(0.05);
 });
 
-it('should return an object', () => {
+    it('should return an object', () => {
     const result = calculate(5, calc1);
     expect(typeof result).toEqual('object');
+});
+
+    it('should return +/- sign before the number', () => {
+   const result = calculate('+/-', calc2);
+   expect(result.total).toBe(-5); 
 });
